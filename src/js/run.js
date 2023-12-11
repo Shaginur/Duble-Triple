@@ -7,6 +7,11 @@ function triple(number) {
 }
 
 export function run(operation, number) {
-  console.log(operation);
-  console.log(number);
+  if (operation === "double") {
+    return double(number);
+  }
+  if (operation === "triple") {
+    return triple(number);
+  }
+  return "0";
 }
